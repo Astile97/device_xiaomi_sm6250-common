@@ -13,9 +13,9 @@ INITIAL_COPYRIGHT_YEAR=2020
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ARROW_ROOT="${MY_DIR}/../../.."
+DERP_ROOT="${MY_DIR}/../../.."
 
-HELPER="${ARROW_ROOT}/vendor/arrow/build/tools/extract_utils.sh"
+HELPER="${DERP_ROOT}/vendor/derp/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -23,7 +23,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ARROW_ROOT}" true
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${DERP_ROOT}" true
 
 # Copyright headers and guards
 write_headers "curtana"
@@ -37,7 +37,7 @@ write_footers
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ARROW_ROOT}" false
+    setup_vendor "${DEVICE}" "${VENDOR}" "${DERP_ROOT}" false
 
     # Copyright headers and guards
     write_headers
