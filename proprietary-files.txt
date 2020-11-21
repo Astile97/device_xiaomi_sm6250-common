@@ -110,7 +110,7 @@ lib64/libwfdcommonutils.so
 lib64/libwfdconfigutils.so
 lib64/libwfdmminterface.so
 lib64/libwfdmmsink.so
-lib64/libwfdnative.so
+lib64/libwfdnative.so|db5158a8c3d25684dd94a2ebdfda66690b02f8fb
 lib64/libwfdrtsp.so
 lib64/libwfdsinksm.so
 lib64/libwfdsm.so
@@ -145,7 +145,7 @@ lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
 lib/libqdMetaData.so
 lib/libwfdavenhancements.so
-lib/libwfdcommonutils.so
+lib/libwfdcommonutils.so|13e9342b2637ada49b1523350d3f367c6cadb19a
 lib/libwfdconfigutils.so
 lib/libwfdmminterface.so
 lib/libwfdmmsink.so
