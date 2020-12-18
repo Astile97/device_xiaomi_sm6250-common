@@ -179,6 +179,9 @@ vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdhdcpservice_proprietary.so
 
+#wfd hack
+vendor/lib64/libdisplayconfig.so:priv-app/WfdService/lib/arm64/libdisplayconfig.so
+
 # Wifi Display Vendor HAL Service
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
