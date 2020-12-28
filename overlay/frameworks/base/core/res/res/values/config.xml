@@ -713,4 +713,8 @@
         <!-- ID0:Fingerprint:Strong -->
         <item>0:2:15</item>
     </string-array>
+ 
+    <!-- Maximum number of supported users -->
+    <bool name="config_enableMultiUserUI">true</bool>
+    <integer name="config_multiuserMaximumUsers">5</integer>
 </resources>
